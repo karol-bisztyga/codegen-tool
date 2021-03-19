@@ -8,13 +8,15 @@
   "license": "MIT",
   "scripts": {
     "gen-flow": "flow && babel src -d dist && node dist flow",
-    "gen-ts": "babel src -d dist && node dist ts"
+    "gen-ts": "babel src -d dist && node dist ts",
+    "postinstall": "yarn patch-package"
   },
   "dependencies": {
     "@babel/cli": "^7.13.10",
     "flow-bin": "^0.146.0",
     "invariant": "^2.2.4",
     "patch-package": "^6.4.7",
+    "postinstall-postinstall": "^2.1.0",
     "react-native-codegen": "^0.0.7"
   }
 }
