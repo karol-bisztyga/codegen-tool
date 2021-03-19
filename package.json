@@ -1,0 +1,19 @@
+{
+  "name": "codegen-tool",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "repository": "https://github.com/karol-bisztyga/codegen-tool.git",
+  "author": "karol-bisztyga <karol.bisztyga@swmansion.com>",
+  "license": "MIT",
+  "scripts": {
+    "gen-flow": "flow && babel src -d dist && node dist flow",
+    "gen-ts": "babel src -d dist && node dist ts"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.13.10",
+    "flow-bin": "^0.146.0",
+    "invariant": "^2.2.4",
+    "react-native-codegen": "^0.0.7"
+  }
+}
